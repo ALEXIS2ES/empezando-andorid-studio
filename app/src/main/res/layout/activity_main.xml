@@ -75,5 +75,27 @@
             android:layout_gravity="center_horizontal"/>
 
     </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:layout_below="@+id/flMain">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Texto de prueva"
+            android:textColor="@android:color/holo_blue_light"
+            android:textAllCaps="true"
+            android:gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Introduce tu Nombre"/>
+
+    </LinearLayout>
 
 </RelativeLayout>
