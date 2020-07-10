@@ -1,125 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#f00"
-    tools:context=".MainActivity">
+    android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/tvsaludo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:layout_centerHorizontal="true"/>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        android:layout_alignRight="@+id/tvsaludo"
-        android:layout_below="@+id/tvsaludo"/>
-
-    <LinearLayout
-        android:id="@+id/llMain"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#0f0"
-        android:layout_below="@+id/button"
-        android:orientation="horizontal">
+        android:background="#f00"
+        tools:context=".MainActivity">
 
         <TextView
+            android:id="@+id/tvsaludo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hello World!"
-            />
+            android:layout_centerHorizontal="true"/>
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button"/>
-
-    </LinearLayout>
-
-    <FrameLayout
-        android:id="@+id/flMain"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#00f"
-        android:layout_below="@+id/llMain">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
-            android:textColor="#fff"
-            android:layout_gravity="bottom|right"/>
-
-        <Button
+            android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Button"
-            android:layout_gravity="center_horizontal"/>
+            android:layout_alignRight="@+id/tvsaludo"
+            android:layout_below="@+id/tvsaludo"/>
 
-    </FrameLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="#fff"
-        android:layout_below="@+id/flMain">
-
-        <TextView
+        <LinearLayout
+            android:id="@+id/llMain"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Texto de prueva"
-            android:textColor="@android:color/holo_blue_light"
-            android:textAllCaps="true"
-            android:gravity="center_horizontal"
-            android:textAppearance="?android:attr/textAppearanceLarge"/>
+            android:background="#0f0"
+            android:layout_below="@+id/button"
+            android:orientation="horizontal">
 
-        <EditText
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello World!"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/flMain"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Introduce tu Nombre"/>
+            android:background="#00f"
+            android:layout_below="@+id/llMain">
 
-        <Button
-            android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello World!"
+                android:textColor="#fff"
+                android:layout_gravity="bottom|right"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button"
+                android:layout_gravity="center_horizontal"/>
+
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Guardar"
-            android:textAllCaps="false"/>
+            android:orientation="vertical"
+            android:background="#fff"
+            android:gravity="center"
+            android:layout_below="@+id/flMain">
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher"
-            android:background="?attr/selectableItemBackgroundBorderless"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Texto de prueva"
+                android:textColor="@android:color/holo_blue_light"
+                android:textAllCaps="true"
+                android:gravity="center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
 
-        <Switch
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Estado"/>
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Acepta terminos y condiciones"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Introduce tu Nombre"/>
 
-    </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guardar"
+                android:textAllCaps="false"/>
 
-</RelativeLayout>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Acepta terminos y condiciones"/>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@mipmap/ic_launcher"/> <!--simepre utilizar desnidad y no px por la varidad de resoluciones-->
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
+
 <!--
 mayus + F10 = crear de nuevo la aplicacion
 Ctrl + F10 = actualizar aplicacion-->
